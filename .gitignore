@@ -1,3 +1,16 @@
+# files to ignore
+.vscode
+API_D3.json()_Practice
+Belly_Button_Demographics
+data_sources
+Dynamic_Plotly_Chart
+Event_Listeners
+JavaScript_Methods_Practice
+JSON_D3.json()
+Plotly_Practice
+BellyButton_bubble_chart_starter_code.js
+BellyButton_gauge_starter_code.js
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

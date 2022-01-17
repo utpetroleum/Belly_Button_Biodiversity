@@ -1,0 +1,19 @@
+.jumbotron {
+    background-image: url("../images/bacteria.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    color: white
+}
+
+body {
+
+    background-color: lightblue;
+}
+
+h3 { 
+    font-family: "Oswald", sans-serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Roboto" />  
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Belly Button Biodiversity</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#bar">Bar Chart</a></li>
+        <li><a href="#bubble">Bubble Chart</a></li>
+        <li><a href="#gauge">Gauge Chart</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+          <h3>From Bacteria to Beef</h3>          
+          <p>
+            Want to find the answer to the old-age question, "Which bacteria make the best synthetic beef?” Find the answer here! 153 volunteers participated in Improbable Beef experiment to determine the bacterial species in their belly buttons. The top 10 bacterial species in their belly buttons are visually displayed below by their Test Subject ID No. If Improbable Beef identifies a species as a candidate to manufacture synthetic beef, volunteers will be able to identify whether that species is found in their navel.
+          </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+          <p> A horizontal bar chart that display the top 10 bacterial species (OTUs) when an individual’s ID is selected from the dropdown menu on the webpage. </p>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+          <p> A gauge chart that displays the weekly washing frequency's value, and display the value as a measure from 0-10 on the progress bar in the gauge chart when an individual's ID is selected from the dropdown menu.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+          <p> A bubble chart that display the sample values for each bacterial species (OTUs) when an individual’s ID is selected from the dropdown menu webpage.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/charts.js"></script>
+
+</body>
+
+</html>
